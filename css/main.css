@@ -11,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "League Spartan", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 500;
@@ -139,7 +139,22 @@ body {
   justify-content: space-between;
   font-size: 15px;
   color: #7C8F8F;
+  white-space: nowrap;
 }
+
+.work-content span:not(:first-child)::before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #909090;
+  flex-shrink: 0;
+  margin-right: 16px;
+  margin-left: 16px;
+  border-radius: 50%;
+  margin-bottom: 3px;
+}
+
 
 .sitenav-list {
   display: flex;
