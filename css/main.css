@@ -4,7 +4,7 @@
 
 :focus {
   outline: 3px dotted tomato;
-  outline-offset: 4px;
+  outline-offset: 2px;
 }
 
 :root {
@@ -183,11 +183,7 @@ body {
 }
 
 .sitenav-item {
-  display: inline;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: 700;
-  background-color:   rgba(92, 165, 165, 0.1);
+
 }
 
 .sitenav-item:not(:last-child) {
@@ -195,13 +191,20 @@ body {
 }
 
 .sitenav-item a {
-  display: inline-block;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  background-color:   rgba(92, 165, 165, 0.1);
+  padding: 4px 8px;
   color: var(--btn-color);
   text-decoration: none;
+  transition: color 0.3s ease, background 0.3s ease;
 }
 
 .sitenav-item a:hover {
-  opacity: 0.8;
+  color: #fff;
+  background-color: var(--btn-color);
 }
 
 .sitenav-item a:active {
