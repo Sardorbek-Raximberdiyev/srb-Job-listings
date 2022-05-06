@@ -87,6 +87,10 @@ body {
   object-fit: contain;
 }
 
+.item-content {
+  margin-right: 10px;
+}
+
 .feature {
   display: flex;
   align-items: center;
@@ -180,10 +184,6 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.sitenav-item {
-
 }
 
 .sitenav-item:not(:last-child) {
