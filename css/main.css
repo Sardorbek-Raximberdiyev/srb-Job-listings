@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: 3px dotted tomato;
+  outline-offset: 4px;
+}
+
 :root {
   --bg-color: #f2f2f2;
   --title-color: #2B3939;
@@ -90,17 +95,19 @@ body {
 
 .site-heading {
   margin: 0;
-  margin-right: 16px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   color: var(--btn-color);
 }
 
+.site-heading:not(:last-child) {
+  margin-right: 16px;
+}
+
 .new-btn {
   padding: 6px 8px;
   border-radius: 12px;
-  margin-right: 8px;
   font-size: 11px;
   line-height: 14px;
   font-weight: 700;
@@ -109,10 +116,13 @@ body {
   background-color: #5CA5A5;
 }
 
+.new-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
 .feature-btn {
   padding: 6px 8px;
   border-radius: 12px;
-  margin-right: 8px;
   font-size: 11px;
   line-height: 14px;
   font-weight: 700;
@@ -131,6 +141,14 @@ body {
   text-decoration: none;
   color: var(--title-color);
   font-weight: 700;
+}
+
+.content-title-link:hover {
+  opacity: 0.8;
+}
+
+.content-title-link:active {
+  opacity: 0.6;
 }
 
 .work-content {
@@ -165,13 +183,27 @@ body {
 }
 
 .sitenav-item {
+  display: inline;
   padding: 4px 8px;
   border-radius: 4px;
   font-weight: 700;
-  color: var(--btn-color);
   background-color:   rgba(92, 165, 165, 0.1);
 }
 
 .sitenav-item:not(:last-child) {
   margin-right: 16px;
+}
+
+.sitenav-item a {
+  display: inline-block;
+  color: var(--btn-color);
+  text-decoration: none;
+}
+
+.sitenav-item a:hover {
+  opacity: 0.8;
+}
+
+.sitenav-item a:active {
+  opacity: 0.6;
 }
